@@ -1,23 +1,10 @@
-import CategoryCard from '../components/CategoryCard';
-import styles from '../styles/Home.module.css';
+import React from 'react';
+import CoinbaseCommerceButton from '../node_modules/react-coinbase-commerce';
 
-const HomePage = () => {
+const App = () => {
   return (
-    <main className={styles.container}>
-      <div className={styles.small}>
-        <CategoryCard image="https://imgur.com/uKQqsuA.png" name="Xbox" />
-        <CategoryCard image="https://imgur.com/3Y1DLYC.png" name="PS5" />
-        <CategoryCard image="https://imgur.com/Dm212HS.png" name="Switch" />
-      </div>
-      <div className={styles.large}>
-        <CategoryCard image="https://imgur.com/qb6IW1f.png" name="PC" />
-        <CategoryCard
-          image="https://imgur.com/HsUfuRU.png"
-          name="Accessories"
-        />
-      </div>
-    </main>
-  );
+    <CoinbaseCommerceButton className='coinbase-commerce-button' checkoutId='ebe81d02-98b2-42f0-8be3-ebbf137be318'/>
+  )
 };
 
-export default HomePage;
+export default App;

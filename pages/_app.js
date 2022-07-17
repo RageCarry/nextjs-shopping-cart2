@@ -3,6 +3,8 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import store from '../redux/store';
 import '../styles/globals.css';
+import '../styles/coinbase-commerce-button.css';
+
 
 function MyApp({ Component, pageProps }) {
   return (
